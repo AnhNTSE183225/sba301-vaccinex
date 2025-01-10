@@ -1,0 +1,13 @@
+@import "../styles/variables";
+
+.header-component {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

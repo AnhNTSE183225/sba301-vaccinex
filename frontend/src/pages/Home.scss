@@ -1,0 +1,28 @@
+@import "../styles/variables";
+
+.home-component {
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    .feature-card {
+      background: white;
+      border: 1px solid $primary-color;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      width: 250px;
+
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
