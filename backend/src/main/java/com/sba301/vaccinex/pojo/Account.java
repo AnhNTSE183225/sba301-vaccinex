@@ -35,6 +35,10 @@ public class Account extends BaseEntity {
 
     Integer age;
 
+    String accessToken;
+
+    String refreshToken;
+
     @Builder.Default
     boolean nonLocked = true;
 

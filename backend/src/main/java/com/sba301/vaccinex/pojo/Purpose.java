@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Use {
+public class Purpose {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
@@ -21,6 +21,6 @@ public class Use {
 
     String description;
 
-    @OneToMany(mappedBy = "use")
+    @OneToMany(mappedBy = "purpose")
     List<VaccineUse> vaccineUses;
 }

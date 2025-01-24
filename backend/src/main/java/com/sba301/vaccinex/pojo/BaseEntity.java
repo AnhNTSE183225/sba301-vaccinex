@@ -5,14 +5,14 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 @MappedSuperclass
-@Data
-@FieldDefaults(level = AccessLevel.PRIVATE)
-@Builder
-@NoArgsConstructor
+@Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class BaseEntity {
 
-    @Builder.Default
     boolean deleted = false;
 
 }

@@ -1,5 +1,6 @@
 package com.sba301.vaccinex.pojo;
 
+import com.sba301.vaccinex.pojo.enums.EnumRoleNameType;
 import com.sba301.vaccinex.pojo.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,7 +29,7 @@ public class Appointment {
     Double totalPrice;
 
     @Enumerated(EnumType.STRING)
-    Enum<PaymentStatus> status;
+    PaymentStatus status;
 
     @OneToMany(mappedBy = "appointment")
     List<Payment> payments;

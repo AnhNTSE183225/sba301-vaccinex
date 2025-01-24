@@ -18,7 +18,7 @@ public class Policy {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    String key;
+    String keyWord;
 
     String value;
 

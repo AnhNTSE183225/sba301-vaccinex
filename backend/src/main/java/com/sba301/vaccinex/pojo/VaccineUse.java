@@ -19,5 +19,5 @@ public class VaccineUse {
     Vaccine vaccine;
 
     @ManyToOne
-    Use use;
+    Purpose purpose;
 }
